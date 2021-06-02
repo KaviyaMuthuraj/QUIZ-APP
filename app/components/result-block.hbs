@@ -1,0 +1,11 @@
+<div class="section4">
+  <div class="result" id="result">
+      <h1>Congrats {{@data.userName}} !</h1>
+      <h1 id="playScore">Your Score is : {{@data.score}} / 100</h1>
+      <h1>for the category is {{@data.category}}</h1>
+      <div class="playAgain">
+        <LinkTo @route="categories"><button type="button">play Again</button></LinkTo>
+      </div>
+  </div>
+</div>
+{{yield}}

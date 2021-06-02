@@ -1,0 +1,26 @@
+{{page-title "Categories"}}
+
+<div class="section2">
+   <div class="content2">
+      <h1>Category</h1>
+      <div class="category">
+        <LinkTo @route="category-types" @model="science">
+          <div class="box" id="box1">Science</div>
+        </LinkTo>
+        <LinkTo @route="category-types" @model="art">
+          <div class="box" id="box2">Art</div>
+        </LinkTo>
+        <LinkTo @route="category-types" @model="sports">
+          <div class="box" id="box3">Sports</div>
+        </LinkTo>
+        <LinkTo @route="category-types" @model="space">
+          <div class="box" id="box4">Space</div>
+        </LinkTo>
+        <LinkTo @route="category-types" @model="entertainment">
+          <div class="box" id="box5">Entertainment</div>
+        </LinkTo>
+      </div>
+   </div>
+</div>
+
+{{outlet}}

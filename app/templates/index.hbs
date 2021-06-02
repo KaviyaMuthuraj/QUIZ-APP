@@ -1,0 +1,15 @@
+{{page-title "Index"}}
+
+<div class="section1">
+  <div class="content1">
+    <span class="span">Q</span>
+    <span class="span">U</span>
+    <span class="span">I</span>
+    <span class="span">Z</span>
+  </div><br><br>
+  <span class="errorMsg">{{this.errorMsg}}</span><br>
+  <Input @type="text" @id="username" @placeholder="Enter your name to start" @autocomplete="off" @value={{this.username}}/>
+  <button type="button" id="start" {{on 'click' this.getUserName }}>start</button>
+</div>
+{{!-- <LinkTo @route="categories"></LinkTo> --}}
+{{outlet}}

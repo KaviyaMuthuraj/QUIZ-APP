@@ -1,0 +1,240 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.section1{
+  background:linear-gradient(#0cebeb,#20e3b2,#29ffc6);
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+.content1{
+  margin-top: 7%;
+  margin-left: 38%;
+  margin-bottom: 3%;
+}
+.span{
+  width:180px;
+  height:100px;
+  border:1px solid black;
+  margin-left:30px;
+  text-align: center;
+  padding: 30px;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  font-size:50px;
+  font-weight:bold;
+  background-color:black;
+  color:white;
+}
+#start{
+  padding: 10px 20px;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  margin-left: 51%;
+  margin-top: 5%;
+  text-align:center;
+  font-size:40px;
+  transform:translate(-50%,-50%);
+  background-color:black;
+  color:white;
+  cursor:pointer;
+}
+#username{
+  width: 35%;
+  background-color: rgba(247, 241, 241,0.6);
+  padding: 10px;
+  text-align: center;
+  border:0.1px solid white;
+  border-radius: 4px;
+  color:black;
+  box-sizing: border-box;
+  font-size: 35px;
+  margin-top: 2%;
+  margin-left: 34%;
+}
+.errorMsg {
+  font-size: 25px;
+  color: #EB3349;
+  margin-left: 46%;
+}
+.section2{
+  background:linear-gradient(#0cebeb,#20e3b2,#29ffc6);
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+.content2{
+  width:60%;
+  position:absolute;
+  border-radius:10px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(#232526,#29323c);
+  color:white;
+  padding:30px;
+}
+.content2 h1{
+  text-align:center;
+  font-size:45px;
+}
+.category{
+  width:60%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  flex-wrap:wrap;
+  padding:30px;
+}
+.box {
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:150px;
+  color: white;
+  height:100px;
+  border:2px solid white;
+  margin:15px;
+  font-size:23px;
+  font-weight:bold;
+  border-radius:10px;
+  background:linear-gradient(#EB3349,#F45C43);
+  cursor:pointer;
+}
+.box:hover {
+  transform: rotate(0) scale(1.1) translateZ(0);
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
+}
+.section3{
+  background:linear-gradient(#0cebeb,#20e3b2,#29ffc6);
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+.quizContainer{
+  width:60%;
+  position:absolute;
+  border-radius:10px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(#232526,#29323c);
+  color:white;
+  padding:30px;
+}
+.quizContainer h1{
+  font-size:40px;
+  text-align:center;
+  font-family: 'Oleo Script', cursive;
+}
+.question{
+  padding:20px;
+  font-size:22px;
+  background:linear-gradient(#ffffff,#ffffff);
+  border-radius:10px;
+  margin:30px 0;
+  color:black;
+  font-family: 'DM Serif Text', serif;
+}
+.questionContainer{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+}
+.option{
+  width:50%;
+  display:inline-block;
+  background:linear-gradient(#ffffff,#ffffff);
+  border-radius:20px;
+  padding:10px 10px 15px;
+  margin:10px;
+  color:black;
+  cursor:pointer;
+}
+.option:hover{
+  background:linear-gradient(#EB3349,#F45C43);
+  color:white;
+}
+a{
+  text-decoration: none;
+}
+.nxtBtn{
+  float:right;
+  border:none;
+  outline:none;
+  width:180px;
+  padding:10px;
+  border-radius:5px;
+  background:linear-gradient(#ffffff,#ffffff);
+  margin:30px 10px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: 'Oleo Script', cursive;
+}
+.nxtBtn:hover{
+  background:linear-gradient(#EB3349,#F45C43);
+  color:white;
+}
+.result{
+  background:linear-gradient(#232526,#29323c);
+  color:white;
+  border-radius:10px;
+  width:60%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.result h1{
+  text-align:center;
+  margin:30px;
+}
+.playAgain button{
+  border:none;
+  outline:none;
+  width:180px;
+  padding:10px;
+  border-radius:5px;
+  background:linear-gradient(#ffffff,#ffffff);
+  margin:30px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: 'Oleo Script', cursive;
+}
+.playAgain{
+   text-align:center;
+}
+.playAgain button:hover{
+  background:linear-gradient(#EB3349,#F45C43);
+  color:white;
+}
+.lifeline{
+  display:flex;
+  float: right;
+  border:none;
+  color:#EB3349;
+}
+.lifeline i{
+  margin:0 5px;
+}
+#lifeline.showLives{
+  display: block;
+}
+.section4{
+  background:linear-gradient(#0cebeb,#20e3b2,#29ffc6);
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}

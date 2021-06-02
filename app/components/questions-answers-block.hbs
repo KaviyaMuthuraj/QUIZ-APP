@@ -1,0 +1,25 @@
+<div class="section3"
+  {{did-insert this.setTimer}}
+  {{!-- {{will-destroy this.stop}} > --}} >
+   <div class="quizContainer">
+      <div class="lifeline">
+        {{#each this.lifeTime}}
+          <span><i class="fa fa-heart"></i></span>
+        {{/each}}
+      </div>
+      <h2 id="timer">{{math-round (math-divide this.timer.remainingMillis 1000)}}</h2>
+      <h1>Quiz</h1>
+        <div class="question">{{this.question}}</div>
+        <div class="questionContainer">
+          {{#each this.options as |option|}}
+            <label class="option"><input type="radio" name="option" value={{option}} {{on 'change' getselectedAnswer value='target.value'}}/><span>{{option}}</span></label>
+          {{/each}}
+
+          {{#if this.errorMsg}}
+            <span>{{errorMsg}}</span>
+          {{/if}}
+        </div>
+        <button type="button" class="nxtBtn" {{on 'click' displayNextQuestion value='target.value'}}>Next Question</button>
+    </div>
+</div>
+{{yield}}
